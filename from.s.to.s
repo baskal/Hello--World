@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="https://e.mail.ru" />
-<title>from.s.to</title>
+<title>1</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">from.s.to</td></tr>
+<tr><td rowspan="1" colspan="3">1</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -24,7 +24,7 @@
 <tr>
 	<td>type</td>
 	<td>css=input.js-input.compose__labels__input</td>
-	<td>selenium.test1@mail.ru</td>
+	<td>baskal.darya@gmail.com</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -58,10 +58,9 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>css=span.b-nav__item__text</td>
+	<td>//div[@id='b-nav_folders']/div/a[2]/div/span</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>
