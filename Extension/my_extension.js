@@ -126,6 +126,10 @@ manager.addRollupRule({
 		command: 'clickAndWait',
 		target: 'ui=LogInPage::LoginButton()',
 	})
+	commands.push({
+		command: 'assertElementPresent',
+		target: 'ui=Messages::LogOutButton()',
+	})
 		return commands;
 	}
 });
