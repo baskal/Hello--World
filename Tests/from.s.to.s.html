@@ -4,36 +4,16 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="https://e.mail.ru" />
-<title>from.s.to</title>
+<title>from.s.to.s</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">from.s.to</td></tr>
+<tr><td rowspan="1" colspan="3">from.s.to.s</td></tr>
 </thead><tbody>
 <tr>
-	<td>open</td>
-	<td>/</td>
-	<td></td>
-</tr>
-<tr>
-	<td>selectWindow</td>
-	<td>null</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=Login</td>
-	<td>selenium.test1</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=Password</td>
-	<td>selenium123</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>//input[@value='Войти в почту']</td>
+	<td>rollup</td>
+	<td>login</td>
 	<td></td>
 </tr>
 <tr>
@@ -43,37 +23,27 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=input.js-input.compose__labels__input</td>
+	<td>ui=ComposeMessage::ToWhomTextBox()</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>css=input.js-input.compose__labels__input</td>
+	<td>ui=ComposeMessage::ToWhomTextBox()</td>
 	<td>selenium.test1@mail.ru</td>
 </tr>
 <tr>
-	<td>type</td>
-	<td>id=compose_222_ab_compose_subj</td>
-	<td>test</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.b-toolbar__btn &gt; span.b-toolbar__btn__text</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>xpath=(//button[@type='submit'])[22]</td>
+	<td>rollup</td>
+	<td>SendMessage</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>css=span.b-nav__item__text</td>
+	<td>ui=Messages::Inbox()</td>
 	<td></td>
 </tr>
 <tr>
-	<td>deleteAllVisibleCookies</td>
-	<td></td>
+	<td>rollup</td>
+	<td>Cookies</td>
 	<td></td>
 </tr>
 </tbody></table>
