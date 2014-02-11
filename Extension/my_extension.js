@@ -104,7 +104,13 @@ var manager = new RollupManager();
 manager.addRollupRule({
 	name: 'login',
 	description: 'log in to mail.ru',
-	args: [],
+	args: [{
+		name: 'login',
+		description: 'login'
+	},
+		{name: 'password',
+		description: 'password'
+	}],
 	commandMatchers: [],
 	getExpandedCommands: function(args) {
 		var commands = [];
@@ -115,12 +121,12 @@ manager.addRollupRule({
 	commands.push({
 		command: 'type',
 		target: 'ui=LogInPage::LoginTextBox()',
-		value: 'selenium.test1'
+		value: args.login
 		});
 	commands.push({
 		command: 'type',
 		target: 'ui=LogInPage::PasswordTextBox()',
-		value: 'selenium123'
+		value: args.password
 	})
 	commands.push({
 		command: 'clickAndWait',
