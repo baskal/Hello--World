@@ -1,0 +1,2 @@
+java -jar ~/selenium-server/selenium-server-standalone-2.39.0.jar -userExtensions Hello--World/Extension/user-extensions.js -htmlSuite *firefox https://e.mail.ru Hello--World/AllTests.html resultAllTests.html
+
