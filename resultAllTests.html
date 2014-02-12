@@ -1,0 +1,331 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>31</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>5</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>5</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.39</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">login</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">inbox</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult2">sent</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult3">drafts</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult4">sendmsg</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">Tests/login.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">login</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>rollup</td>
+	<td>login</td>
+	<td>login=selenium.test1, password=selenium123</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>ui=Messages::LogOutButton()</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">Tests/inbox.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">inbox</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>rollup</td>
+	<td>login</td>
+	<td>login=selenium.test1, password=selenium123</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>rollup</td>
+	<td>inbox</td>
+	<td>email=selenium.test1@mail.ru</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>ui=Messages::LogOutButton()</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">Tests/sent.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">sent</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>rollup</td>
+	<td>login</td>
+	<td>login=selenium.test1, password=selenium123</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>rollup</td>
+	<td>sent</td>
+	<td>email=selenium.test1@mail.ru</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>ui=Messages::LogOutButton()</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">Tests/drafts.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">drafts</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>rollup</td>
+	<td>login</td>
+	<td>login=selenium.test1, password=selenium123</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>rollup</td>
+	<td>drafts</td>
+	<td>email=selenium.test1@mail.ru</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>ui=Messages::LogOutButton()</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult4">Tests/sendmsg.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">sendmsg</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>rollup</td>
+	<td>login</td>
+	<td>login=selenium.test1, password=selenium123</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>rollup</td>
+	<td>SendMessage</td>
+	<td>recepient=baskal.darya@gmail.com, subject=test</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>ui=Messages::LogOutButton()</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/Tests/login.html
+info: Executing: |rollup | login | login=selenium.test1, password=selenium123 |
+info: Executing: |open | https://e.mail.ru/ |  |
+info: Executing: |type | ui=LogInPage::LoginTextBox() | selenium.test1 |
+info: Trying [name]: Login
+info: Executing: |type | ui=LogInPage::PasswordTextBox() | selenium123 |
+info: Trying [name]: Password
+info: Executing: |clickAndWait | ui=LogInPage::LoginButton() |  |
+info: Trying [implicit]: //input[@type=&quot;submit&quot;]
+info: Executing: |assertElementPresent | ui=Messages::LogOutButton() |  |
+info: Trying [id]: PH_logoutLink
+info: Rollup execution complete: ok
+info: Executing: |clickAndWait | ui=Messages::LogOutButton() |  |
+info: Trying [id]: PH_logoutLink
+info: Starting test /selenium-server/tests/Tests/inbox.html
+info: Executing: |rollup | login | login=selenium.test1, password=selenium123 |
+info: Executing: |open | https://e.mail.ru/ |  |
+info: Executing: |type | ui=LogInPage::LoginTextBox() | selenium.test1 |
+info: Trying [name]: Login
+info: Executing: |type | ui=LogInPage::PasswordTextBox() | selenium123 |
+info: Trying [name]: Password
+info: Executing: |clickAndWait | ui=LogInPage::LoginButton() |  |
+info: Trying [implicit]: //input[@type=&quot;submit&quot;]
+info: Executing: |assertElementPresent | ui=Messages::LogOutButton() |  |
+info: Trying [id]: PH_logoutLink
+info: Rollup execution complete: ok
+info: Executing: |rollup | inbox | email=selenium.test1@mail.ru |
+info: Executing: |clickAndWait | ui=Messages::Inbox() |  |
+info: Trying [css]: span.b-nav__item__text
+info: Executing: |assertTitle | *ÐÑÐ¾Ð´ÑÑÐ¸Ðµ - selenium.test1@mail.ru - ÐÐ¾ÑÑÐ° Mail.Ru |  |
+info: Rollup execution complete: ok
+info: Executing: |clickAndWait | ui=Messages::LogOutButton() |  |
+info: Trying [id]: PH_logoutLink
+info: Starting test /selenium-server/tests/Tests/sent.html
+info: Executing: |rollup | login | login=selenium.test1, password=selenium123 |
+info: Executing: |open | https://e.mail.ru/ |  |
+info: Executing: |type | ui=LogInPage::LoginTextBox() | selenium.test1 |
+info: Trying [name]: Login
+info: Executing: |type | ui=LogInPage::PasswordTextBox() | selenium123 |
+info: Trying [name]: Password
+info: Executing: |clickAndWait | ui=LogInPage::LoginButton() |  |
+info: Trying [implicit]: //input[@type=&quot;submit&quot;]
+info: Executing: |assertElementPresent | ui=Messages::LogOutButton() |  |
+info: Trying [id]: PH_logoutLink
+info: Rollup execution complete: ok
+info: Executing: |rollup | sent | email=selenium.test1@mail.ru |
+info: Executing: |clickAndWait | ui=Messages::Sent() |  |
+info: Trying [implicit]: //div[@id=&quot;b-nav_folders&quot;]/div/a[2]/div/span
+info: Executing: |assertTitle | *ÐÑÐ¿ÑÐ°Ð²Ð»ÐµÐ½Ð½ÑÐµ - selenium.test1@mail.ru - ÐÐ¾ÑÑÐ° Mail.Ru |  |
+info: Rollup execution complete: ok
+info: Executing: |clickAndWait | ui=Messages::LogOutButton() |  |
+info: Trying [id]: PH_logoutLink
+info: Starting test /selenium-server/tests/Tests/drafts.html
+info: Executing: |rollup | login | login=selenium.test1, password=selenium123 |
+info: Executing: |open | https://e.mail.ru/ |  |
+info: Executing: |type | ui=LogInPage::LoginTextBox() | selenium.test1 |
+info: Trying [name]: Login
+info: Executing: |type | ui=LogInPage::PasswordTextBox() | selenium123 |
+info: Trying [name]: Password
+info: Executing: |clickAndWait | ui=LogInPage::LoginButton() |  |
+info: Trying [implicit]: //input[@type=&quot;submit&quot;]
+info: Executing: |assertElementPresent | ui=Messages::LogOutButton() |  |
+info: Trying [id]: PH_logoutLink
+info: Rollup execution complete: ok
+info: Executing: |rollup | drafts | email=selenium.test1@mail.ru |
+info: Executing: |clickAndWait | ui=Messages::Drafts() |  |
+info: Trying [implicit]: //div[@id=&quot;b-nav_folders&quot;]/div/a[3]/div/span
+info: Executing: |assertTitle | *Ð§ÐµÑÐ½Ð¾Ð²Ð¸ÐºÐ¸ - selenium.test1@mail.ru - ÐÐ¾ÑÑÐ° Mail.Ru |  |
+info: Rollup execution complete: ok
+info: Executing: |clickAndWait | ui=Messages::LogOutButton() |  |
+info: Trying [id]: PH_logoutLink
+info: Starting test /selenium-server/tests/Tests/sendmsg.html
+info: Executing: |rollup | login | login=selenium.test1, password=selenium123 |
+info: Executing: |open | https://e.mail.ru/ |  |
+info: Executing: |type | ui=LogInPage::LoginTextBox() | selenium.test1 |
+info: Trying [name]: Login
+info: Executing: |type | ui=LogInPage::PasswordTextBox() | selenium123 |
+info: Trying [name]: Password
+info: Executing: |clickAndWait | ui=LogInPage::LoginButton() |  |
+info: Trying [implicit]: //input[@type=&quot;submit&quot;]
+info: Executing: |assertElementPresent | ui=Messages::LogOutButton() |  |
+info: Trying [id]: PH_logoutLink
+info: Rollup execution complete: ok
+info: Executing: |rollup | SendMessage | recepient=baskal.darya@gmail.com, subject=test |
+info: Executing: |open | /compose |  |
+info: Executing: |type | ui=ComposeMessage::ToWhomTextBox() | baskal.darya@gmail.com |
+info: Trying [css]: input.js-input.compose__labels__input
+info: Executing: |type | ui=ComposeMessage::SubjectTextBox() | test |
+info: Trying [id]: compose_222_ab_compose_subj
+info: Executing: |click | ui=ComposeMessage::SendMessageButton() |  |
+info: Trying [css]: div.b-toolbar__btn &gt; span.b-toolbar__btn__text
+info: Executing: |clickAndWait | ui=ComposeMessage::SendBlankMessageButton() |  |
+info: Trying [xpath]: (//button[@type=&quot;submit&quot;])[22]
+info: Executing: |assertTextPresent | ÐÐ°ÑÐµ Ð¿Ð¸ÑÑÐ¼Ð¾ Ð¾ÑÐ¿ÑÐ°Ð²Ð»ÐµÐ½Ð¾ |  |
+info: Rollup execution complete: ok
+info: Executing: |clickAndWait | ui=Messages::LogOutButton() |  |
+info: Trying [id]: PH_logoutLink
+</pre></body></html>
+
+
