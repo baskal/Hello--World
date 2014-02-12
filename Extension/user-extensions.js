@@ -163,10 +163,23 @@ manager.addRollupRule({
 manager.addRollupRule({
 	name: 'SendMessage',
 	description: 'Write subject of message and send message',
-	args:[],
+	args:[{
+		name: 'recepient',
+		description: 'recepient'},
+		{name: 'subject',
+		description: 'subject'}],
 	commandMatchers: [],
 	getExpandedCommands: function (args) {
 		var commands=[];
+	commands.push({
+		command: 'open',
+		target: '/compose',
+});
+	commands.push({
+		command: 'type',
+		target: 'ui=ComposeMessage::ToWhomTextBox()',
+		value: args.recepient,
+});	
 	commands.push({
 		command: 'type',
 		target: 'ui=ComposeMessage::SubjectTextBox()',
@@ -179,6 +192,10 @@ manager.addRollupRule({
 	commands.push({
 		command: 'clickAndWait',
 		target: 'ui=ComposeMessage::SendBlankMessageButton()',
+});
+	commands.push({
+		command: 'assertTextPresent',
+		target: 'Ваше письмо отправлено',
 });
 	return commands;
 }
