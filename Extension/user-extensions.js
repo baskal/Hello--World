@@ -200,6 +200,71 @@ manager.addRollupRule({
 	return commands;
 }
 })
+//check 'inbox'
+manager.addRollupRule({
+	name: 'inbox',
+	description: 'check link "inbox"',
+	args:[{
+		name: 'email',
+		description: 'user e-mail'}],
+	commandMatchers: [],
+	getExpandedCommands: function (args) {
+		var commands=[];
+	commands.push({
+		command: 'clickAndWait',
+		target: 'ui=Messages::Inbox()',
+});
+	commands.push({
+		command: 'assertTitle',
+		target: '*Входящие - '+args.email+' - Почта Mail.Ru'
+});	
+	return commands;
+}
+})
+
+//check 'sent'
+manager.addRollupRule({
+	name: 'sent',
+	description: 'check link "sent"',
+	args:[{
+		name: 'email',
+		description: 'user e-mail'}],
+	commandMatchers: [],
+	getExpandedCommands: function (args) {
+		var commands=[];
+	commands.push({
+		command: 'clickAndWait',
+		target: 'ui=Messages::Sent()',
+});
+	commands.push({
+		command: 'assertTitle',
+		target: '*Отправленные - '+args.email+' - Почта Mail.Ru'
+});	
+	return commands;
+}
+})
+
+//check 'drafts'
+manager.addRollupRule({
+	name: 'drafts',
+	description: 'check link "drafts"',
+	args:[{
+		name: 'email',
+		description: 'user e-mail'}],
+	commandMatchers: [],
+	getExpandedCommands: function (args) {
+		var commands=[];
+	commands.push({
+		command: 'clickAndWait',
+		target: 'ui=Messages::Drafts()',
+});
+	commands.push({
+		command: 'assertTitle',
+		target: '*Черновики - '+args.email+' - Почта Mail.Ru'
+});	
+	return commands;
+}
+})
 
 //emty the trash
 manager.addRollupRule({
